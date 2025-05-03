@@ -96,8 +96,8 @@ name = "cryptography-openssl"
 version = "0.1.0"
 dependencies = [
  "cfg-if",
- "foreign-types 0.5.0",
- "foreign-types-shared 0.1.1",
+ "foreign-types",
+ "foreign-types-shared 0.3.1",
  "openssl",
  "openssl-sys",
 ]
@@ -115,7 +115,7 @@ dependencies = [
  "cryptography-openssl",
  "cryptography-x509",
  "cryptography-x509-verification",
- "foreign-types-shared 0.1.1",
+ "foreign-types-shared 0.5.0",
  "once_cell",
  "openssl",
  "openssl-sys",
@@ -158,7 +158,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d737d9aa519fb7b749cbc3b962edcf310a8dd1f4b67c91c4f83975dbdd17d965"
 dependencies = [
  "foreign-types-macros",
- "foreign-types-shared 0.3.1",
+ "foreign-types-shared 0.5.0",
 ]
 
 [[package]]
@@ -180,7 +180,7 @@ checksum = "00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b"
 
 [[package]]
 name = "foreign-types-shared"
-version = "0.3.1"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aa9a19cbb55df58761df49b23516a86d432839add4af60fc256da840f66ed35b"
 
@@ -225,7 +225,7 @@ checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 
 [[package]]
 name = "openssl"
-version = "0.10.72"
+version = "3.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fedfea7d58a1f73118430a55da6a286e7b044961736ce96a16a17068ea25e5da"
 dependencies = [
