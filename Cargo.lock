@@ -97,7 +97,7 @@ version = "0.1.0"
 dependencies = [
  "cfg-if",
  "foreign-types",
- "foreign-types-shared 0.3.1",
+ "foreign-types-shared",
  "openssl",
  "openssl-sys",
 ]
@@ -115,7 +115,7 @@ dependencies = [
  "cryptography-openssl",
  "cryptography-x509",
  "cryptography-x509-verification",
- "foreign-types-shared 0.5.0",
+ "foreign-types-shared",
  "once_cell",
  "openssl",
  "openssl-sys",
@@ -144,21 +144,21 @@ dependencies = [
 
 [[package]]
 name = "foreign-types"
-version = "0.3.2"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f6f339eb8adc052cd2ca78910fda869aefa38d22d5cb648e6485e4d3fc06f3b1"
 dependencies = [
- "foreign-types-shared 0.1.1",
+ "foreign-types-shared",
 ]
 
 [[package]]
-name = "foreign-types"
+name = "foreign-types-shared"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d737d9aa519fb7b749cbc3b962edcf310a8dd1f4b67c91c4f83975dbdd17d965"
 dependencies = [
  "foreign-types-macros",
- "foreign-types-shared 0.5.0",
+ "foreign-types-shared",
 ]
 
 [[package]]
@@ -171,12 +171,6 @@ dependencies = [
  "quote",
  "syn",
 ]
-
-[[package]]
-name = "foreign-types-shared"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b"
 
 [[package]]
 name = "foreign-types-shared"
