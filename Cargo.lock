@@ -107,6 +107,7 @@ name = "cryptography-rust"
 version = "0.1.0"
 dependencies = [
  "asn1",
+ "base64",
  "cfg-if",
  "cryptography-cffi",
  "cryptography-crypto",
@@ -121,6 +122,7 @@ dependencies = [
  "openssl-sys",
  "pem",
  "pyo3",
+ "pyo3-build-config",
  "self_cell",
 ]
 

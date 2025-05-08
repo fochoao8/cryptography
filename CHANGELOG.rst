@@ -8,10 +8,13 @@ Changelog
 
 .. note:: This version is not yet released and is under active development.
 
-* Added support for serialization of PKCS#12 Java truststores in
-  :func:`~cryptography.hazmat.primitives.serialization.pkcs12.serialize_java_truststore`
 * Support for Python 3.7 is deprecated and will be removed in the next
   ``cryptography`` release.
+* Added support for serialization of PKCS#12 Java truststores in
+  :func:`~cryptography.hazmat.primitives.serialization.pkcs12.serialize_java_truststore`
+* Added :meth:`~cryptography.hazmat.primitives.kdf.argon2.Argon2id.derive_phc_encoded` and
+  :meth:`~cryptography.hazmat.primitives.kdf.argon2.Argon2id.verify_phc_encoded` methods
+  to support password hashing in the PHC string format
 * Added support for PKCS7 decryption and encryption using AES-256 as the
   content algorithm, in addition to AES-128.
 * **BACKWARDS INCOMPATIBLE:** Made SSH private key loading more consistent with
@@ -61,6 +64,11 @@ Changelog
 * Added support for compiling against `aws-lc`_.
 * Parsing X.509 structures now more strictly enforces that ``Name`` structures
   do not have malformed ASN.1.
+* We now publish ``py311`` wheels that utilize the faster ``pyo3::buffer::PyBuffer``
+  interface, resulting in significantly improved performance for operations
+  involving small buffers.
+* Added :func:`~cryptography.hazmat.primitives.serialization.ssh_key_fingerprint`
+  for computing fingerprints of SSH public keys.
 
 .. _v44-0-3:
 
